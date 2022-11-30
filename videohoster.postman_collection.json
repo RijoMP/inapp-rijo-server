@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "868d17da-b883-4940-a84b-63ffee31119d",
+		"name": "videohoster",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21538193"
+	},
+	"item": [
+		{
+			"name": "upload video",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\":\"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\r\n    \"name\":\"bigbuck\",\r\n    \"uid\":\"testusr\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API}}/file/",
+					"host": [
+						"{{API}}"
+					],
+					"path": [
+						"file",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "upload video",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\":\"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\r\n    \"name\":\"bigbuck\",\r\n    \"uid\":\"testusr\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/file/",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"file",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39-rmlnVBNsfe5Wok12S/FdQdifvUQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Nov 2022 15:37:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"code\": \"200\",\n        \"message\": \"uploading\"\n    },\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "get all videos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API}}/file/",
+					"host": [
+						"{{API}}"
+					],
+					"path": [
+						"file",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get all videos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API}}/file/",
+							"host": [
+								"{{API}}"
+							],
+							"path": [
+								"file",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12964"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32a4-B3WFosqNLwobYppkDX25NFYI7mk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Nov 2022 16:42:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": {\n        \"code\": \"200\",\n        \"message\": \"List\"\n    },\n    \"data\": {\n        \"videos\": [\n            {\n                \"_id\": \"638740363c2e6e4ad8af153b\",\n                \"name\": \"bigbuck\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"1669808182499.mp4\",\n                \"uploadedBy\": \"testusr\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T11:36:22.522Z\",\n                \"updatedAt\": \"2022-11-30T11:36:22.522Z\"\n            },\n            {\n                \"_id\": \"638740ce575f7610ecab8774\",\n                \"name\": \"bigbuck\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"E:\\\\test\\\\real-time-API-server\\\\videos\\\\1669808334216.mp4\",\n                \"uploadedBy\": \"testusr\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T11:38:54.239Z\",\n                \"updatedAt\": \"2022-11-30T11:38:54.239Z\"\n            },\n            {\n                \"_id\": \"6387430dbe60c690c82aedb5\",\n                \"name\": \"bigbuck\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"E:\\\\test\\\\real-time-API-server\\\\videos\\\\1669808909732.mp4\",\n                \"uploadedBy\": \"testusr\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T11:48:29.750Z\",\n                \"updatedAt\": \"2022-11-30T11:48:29.750Z\"\n            },\n            {\n                \"_id\": \"638747f009c279b1808a5e5b\",\n                \"name\": \"bigbuck\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000videos/1669810160147.mp4\",\n                \"uploadedBy\": \"testusr\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T12:09:20.176Z\",\n                \"updatedAt\": \"2022-11-30T12:09:20.176Z\"\n            },\n            {\n                \"_id\": \"6387487bbc16fa73e42be463\",\n                \"name\": \"bigbuck\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669810299182.mp4\",\n                \"uploadedBy\": \"testusr\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T12:11:39.212Z\",\n                \"updatedAt\": \"2022-11-30T12:11:39.212Z\"\n            },\n            {\n                \"_id\": \"638748f8bc16fa73e42be467\",\n                \"name\": \"bigbuck\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669810424154.mp4\",\n                \"uploadedBy\": \"testusr\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T12:13:44.157Z\",\n                \"updatedAt\": \"2022-11-30T12:13:44.157Z\"\n            },\n            {\n                \"_id\": \"638749557beac072c841f282\",\n                \"name\": \"bigbuck\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669810517988.mp4\",\n                \"uploadedBy\": \"testusr\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T12:15:18.041Z\",\n                \"updatedAt\": \"2022-11-30T12:15:18.041Z\"\n            },\n            {\n                \"_id\": \"6387623d7beac072c841f2a7\",\n                \"name\": \"bigbuck\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669816893150.mp4\",\n                \"uploadedBy\": \"testusr\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:01:33.171Z\",\n                \"updatedAt\": \"2022-11-30T14:01:33.171Z\"\n            },\n            {\n                \"_id\": \"6387680acb575426f02f2fea\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669818378330.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:26:18.335Z\",\n                \"updatedAt\": \"2022-11-30T14:26:18.335Z\"\n            },\n            {\n                \"_id\": \"63876819cb575426f02f2fed\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669818393791.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:26:33.795Z\",\n                \"updatedAt\": \"2022-11-30T14:26:33.795Z\"\n            },\n            {\n                \"_id\": \"638769b1cb575426f02f2ff3\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669818801138.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:33:21.142Z\",\n                \"updatedAt\": \"2022-11-30T14:33:21.142Z\"\n            },\n            {\n                \"_id\": \"638769dccb575426f02f2ff6\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669818844939.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:34:04.943Z\",\n                \"updatedAt\": \"2022-11-30T14:34:04.943Z\"\n            },\n            {\n                \"_id\": \"63876b07f07a107e4c387e6c\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819143183.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:39:03.226Z\",\n                \"updatedAt\": \"2022-11-30T14:39:03.226Z\"\n            },\n            {\n                \"_id\": \"63876b08f07a107e4c387e6f\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819144466.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:39:04.473Z\",\n                \"updatedAt\": \"2022-11-30T14:39:04.473Z\"\n            },\n            {\n                \"_id\": \"63876b84f07a107e4c387e72\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819268887.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:41:08.897Z\",\n                \"updatedAt\": \"2022-11-30T14:41:08.897Z\"\n            },\n            {\n                \"_id\": \"63876b84f07a107e4c387e75\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819268924.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:41:08.938Z\",\n                \"updatedAt\": \"2022-11-30T14:41:08.938Z\"\n            },\n            {\n                \"_id\": \"63876b85f07a107e4c387e78\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819269118.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:41:09.134Z\",\n                \"updatedAt\": \"2022-11-30T14:41:09.134Z\"\n            },\n            {\n                \"_id\": \"63876bcef07a107e4c387e7d\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819342726.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:42:22.729Z\",\n                \"updatedAt\": \"2022-11-30T14:42:22.729Z\"\n            },\n            {\n                \"_id\": \"63876bfaf07a107e4c387e80\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819386786.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:43:06.791Z\",\n                \"updatedAt\": \"2022-11-30T14:43:06.791Z\"\n            },\n            {\n                \"_id\": \"63876c07f07a107e4c387e83\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819399581.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:43:19.585Z\",\n                \"updatedAt\": \"2022-11-30T14:43:19.585Z\"\n            },\n            {\n                \"_id\": \"63876c1bf07a107e4c387e87\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819419624.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:43:39.630Z\",\n                \"updatedAt\": \"2022-11-30T14:43:39.630Z\"\n            },\n            {\n                \"_id\": \"63876d59f07a107e4c387e8a\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819737439.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:48:57.461Z\",\n                \"updatedAt\": \"2022-11-30T14:48:57.461Z\"\n            },\n            {\n                \"_id\": \"63876d62f07a107e4c387e8d\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819746774.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:49:06.779Z\",\n                \"updatedAt\": \"2022-11-30T14:49:06.779Z\"\n            },\n            {\n                \"_id\": \"63876d69f07a107e4c387e90\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819753090.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:49:13.094Z\",\n                \"updatedAt\": \"2022-11-30T14:49:13.094Z\"\n            },\n            {\n                \"_id\": \"63876d6ff07a107e4c387e93\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819759312.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:49:19.318Z\",\n                \"updatedAt\": \"2022-11-30T14:49:19.318Z\"\n            },\n            {\n                \"_id\": \"63876e4af07a107e4c387e96\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819978618.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:52:58.624Z\",\n                \"updatedAt\": \"2022-11-30T14:52:58.624Z\"\n            },\n            {\n                \"_id\": \"63876e4bf07a107e4c387e99\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819979511.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:52:59.515Z\",\n                \"updatedAt\": \"2022-11-30T14:52:59.515Z\"\n            },\n            {\n                \"_id\": \"63876e4bf07a107e4c387e9b\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819979519.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:52:59.523Z\",\n                \"updatedAt\": \"2022-11-30T14:52:59.523Z\"\n            },\n            {\n                \"_id\": \"63876e4bf07a107e4c387e9e\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669819979540.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:52:59.548Z\",\n                \"updatedAt\": \"2022-11-30T14:52:59.548Z\"\n            },\n            {\n                \"_id\": \"63876ef1cda657a4d047a745\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669820145828.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:55:45.880Z\",\n                \"updatedAt\": \"2022-11-30T14:55:45.880Z\"\n            },\n            {\n                \"_id\": \"63876ef1cda657a4d047a747\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669820145892.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:55:45.898Z\",\n                \"updatedAt\": \"2022-11-30T14:55:45.898Z\"\n            },\n            {\n                \"_id\": \"63876f0acda657a4d047a74b\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669820170480.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:56:10.487Z\",\n                \"updatedAt\": \"2022-11-30T14:56:10.487Z\"\n            },\n            {\n                \"_id\": \"63876f6ecda657a4d047a74e\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669820270618.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:57:50.624Z\",\n                \"updatedAt\": \"2022-11-30T14:57:50.624Z\"\n            },\n            {\n                \"_id\": \"63876f88cda657a4d047a751\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669820296493.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:58:16.500Z\",\n                \"updatedAt\": \"2022-11-30T14:58:16.500Z\"\n            },\n            {\n                \"_id\": \"63876fd4cda657a4d047a754\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669820372696.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T14:59:32.700Z\",\n                \"updatedAt\": \"2022-11-30T14:59:32.700Z\"\n            },\n            {\n                \"_id\": \"638778b8c3754a1fac0b3d7a\",\n                \"name\": \"bigbuck\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669822648459.mp4\",\n                \"uploadedBy\": \"testusr\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T15:37:28.495Z\",\n                \"updatedAt\": \"2022-11-30T15:37:28.495Z\"\n            },\n            {\n                \"_id\": \"6387810eacb27495a819a8e1\",\n                \"name\": \"Golf_Putting_AutoTracking.avi\",\n                \"sourceUrl\": \"https://www.quintic.com/software/sample_videos/Golf_Putting_AutoTracking.avi\",\n                \"size\": 1235968,\n                \"localUrl\": \"http://localhost:5000/1669824782917.mp4\",\n                \"uploadedBy\": \"test_user\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2022-11-30T16:13:02.941Z\",\n                \"updatedAt\": \"2022-11-30T16:13:02.941Z\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}
