@@ -5,14 +5,16 @@ import Axios from 'axios'
 import Fs from 'fs'
 import Path from 'path'
 import ProgressBar from 'progress'
+import common from '../common/common'
 
 
 const router = express.Router()
 
 router.get('/', async (req, res) => {
   try {
-    const videos = await Video.find()
-    res.send(videos)
+    const videos = await Video.find({},{_id:1,name:1, sourceUrl:1, size:1, localUrl:1, uploadedBy:1, isDeleted:1, createdAt:1, updatedAt:1})
+    common.send(res,"200","List",{videos:videos})
+   // res.send(videos)
   } catch (error) {
     res.send(error)
   }
@@ -93,7 +95,9 @@ router.post('/', async (req, res) => {
     console.log(video.name)
     const videos  = await Video.find()
     io.emit('order-added', videos)
-    res.status(201).send("uploading")
+    // res.status(201).send("uploading")
+    common.send(res,"200","uploading",{})
+
   } catch (error) {
     console.log(error)
     res.status(500).send(error)
