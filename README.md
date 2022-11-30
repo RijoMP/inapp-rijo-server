@@ -5,7 +5,7 @@
 3. Make sure mongo is running. The mongo db url and Port is configured in the .env file. Rename the .env.js to .env to use the existing configs
 4. The API documentation shared in the JSON file 'POSTMAN.json'. Import it in postman to get the APIs and sample request responses
 5. APIs        
-      ## i. Get all the videos list
+      ## i. Get all the videos list ##
               request body: 
                              {}
               response: {
@@ -28,7 +28,8 @@
                            ** "updatedAt":  **
                                       description: last updated time of the videoo. Type: date string
                             }
-         ## ii. Upload a video
+                            
+         ## ii. Upload a video ##
               request body: 
                               {
                              ** "url": **
