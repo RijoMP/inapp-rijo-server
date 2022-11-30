@@ -47,4 +47,4 @@
               response: {
                            
                             }
- 6. The man collection is shared in the Repo
+ 6. The postman collection is shared in the Repo
